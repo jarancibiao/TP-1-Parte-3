@@ -1,10 +1,10 @@
 import pandas as pd 
 
-df1=pd.read_csv('D:/Data Engineer/TP-1-Parte-3/ecommerce_customers_dataset.csv',encoding='utf-8')
-df2=pd.read_csv('D:/Data Engineer/TP-1-Parte-3/ecommerce_order_items_dataset.csv',encoding='utf-8')
-df3=pd.read_csv('D:/Data Engineer/TP-1-Parte-3/ecommerce_order_payments_dataset.csv',encoding='utf-8')
-df4=pd.read_csv('D:/Data Engineer/TP-1-Parte-3/ecommerce_orders_dataset.csv',encoding='utf-8')
-df5=pd.read_csv('D:/Data Engineer/TP-1-Parte-3/ecommerce_products_dataset.csv',encoding='utf-8')
+df1=pd.read_csv('D:/Data Engineer/TP-1-Parte-3/TP-1-Parte-3/ecommerce_customers_dataset.csv',encoding='utf-8')
+df2=pd.read_csv('D:/Data Engineer/TP-1-Parte-3/TP-1-Parte-3/ecommerce_order_items_dataset.csv',encoding='utf-8')
+df3=pd.read_csv('D:/Data Engineer/TP-1-Parte-3/TP-1-Parte-3/ecommerce_order_payments_dataset.csv',encoding='utf-8')
+df4=pd.read_csv('D:/Data Engineer/TP-1-Parte-3/TP-1-Parte-3/ecommerce_orders_dataset.csv',encoding='utf-8')
+df5=pd.read_csv('D:/Data Engineer/TP-1-Parte-3/TP-1-Parte-3/ecommerce_products_dataset.csv',encoding='utf-8')
 
 df1.set_index('customer_id', inplace=True)
 df2.set_index('order_id', inplace=True)
@@ -25,4 +25,5 @@ cantidad_vendida = cat_mas_vendida.max()#identifica la cantidad de veces
 print(f'\nLa categoría más vendida es: "{cat_mas_repetida}", con {cantidad_vendida} unidades vendidas.')
 
 total_pedidos = len(df4)#cuenta la cantidad de filas en el df
-print(f'\nEl total de pedidos realizados es de {total_pedidos}.')
+print(f'\nEl total de pedidos realizados es de {total_pedidos}.\n')
+
